@@ -1,1 +1,133 @@
 
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #f8d210;
+}
+
+/* About Us section */
+.about-us {
+    padding: 50px 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+.about-us h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.mission, .values {
+    margin-top: 40px;
+}
+
+.mission h2, .values h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #f8d210;
+}
+
+.mission p, .values ul {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.values ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.values li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .about-us h1 {
+        font-size: 30px;
+    }
+    .container {
+        padding: 0 10px;
+    }
+}
